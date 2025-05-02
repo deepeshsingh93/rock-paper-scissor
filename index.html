@@ -47,12 +47,12 @@
         <div class="choices-display">
           <div class="player-choice">
             <h3>You</h3>
-            <div id="player-choice-display">❓</div>
+            <div id="player-choice-display">&#128110;</div>
           </div>
           <div class="vs">VS</div>
           <div class="computer-choice">
             <h3>Computer</h3>
-            <div id="computer-choice-display">❓</div>
+            <div id="computer-choice-display">&#128187;</div>
           </div>
         </div>
         <div id="winner-label">Who will win?</div>
@@ -60,6 +60,14 @@
 
       <div class="action-buttons">
         <button id="reset-button">Reset Game</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <h2>Game Over!</h2>
+          <p id="p-pop-msg"></p>
+          <button onclick="closePopup()">Close</button>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
